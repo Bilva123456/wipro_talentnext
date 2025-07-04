@@ -7,10 +7,9 @@ public class Question1 {
     	  Scanner sc = new Scanner(System.in);
     	  String company = sc.nextLine();
     	  String location = sc.nextLine();
-    	  System.out.println(company +"Technologies" + location);
+    	  System.out.println(company +" Technologies " + location);
     	  
-    	  
-    	  
+     
     	  
       }
 }
