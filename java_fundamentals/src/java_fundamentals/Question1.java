@@ -8,8 +8,5 @@ public class Question1 {
     	  String company = sc.nextLine();
     	  String location = sc.nextLine();
     	  System.out.println(company +" Technologies " + location);
-    	  
-     
-    	  
-      }
+  }
 }
