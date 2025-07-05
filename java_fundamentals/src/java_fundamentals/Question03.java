@@ -7,5 +7,6 @@ public class Question3 {
     	int b = sc.nextInt();
     	int c = a+b;
     	System.out.println("The sum of "+ a + " and "+ b +" is "+ c);
+    	sc.close();
     }
 }

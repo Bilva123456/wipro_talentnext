@@ -20,6 +20,8 @@ public class Question6 {
             }
         }
         System.out.println(); 
+        
     }
+    scanner.close();
 }
 }

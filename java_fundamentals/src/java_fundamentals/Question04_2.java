@@ -10,5 +10,6 @@ public class Question4_2 {
 	 }else {
 		 System.out.println("false");
 	 }
+	 sc.close();
    }
 }

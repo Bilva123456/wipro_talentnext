@@ -11,7 +11,7 @@ public class Question7 {
 		}else {
 			System.out.println(chr2+","+chr1);
 		}
-
+     sc.close();
 	}
 
 }

@@ -9,5 +9,6 @@ public class Question5 {
 	 }else {
 		 System.out.println("odd");
 	 }
+	 sc.close();
   }
 }

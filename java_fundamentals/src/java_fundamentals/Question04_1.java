@@ -11,6 +11,6 @@ public class Question4_1 {
      }else {
     	 System.out.println("Zero");
      }
-    	 
+    sc.close();	 
    }
 }
