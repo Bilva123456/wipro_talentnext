@@ -1,5 +1,0 @@
-package java_fundamentals;
-
-public class Question4_2 {
-
-}
