@@ -1,6 +1,6 @@
 package java_fundamentals;
 import java.util.Scanner;
-public class Question8 {
+public class Question08 {
   public static void main(String[]args) {
 	Scanner sc = new Scanner(System.in);
 	char n = sc.next().charAt(0);
