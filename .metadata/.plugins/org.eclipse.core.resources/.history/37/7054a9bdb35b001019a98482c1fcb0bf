@@ -1,0 +1,29 @@
+package oops_inheritance;
+
+public class Box {
+		    private double width;
+		    private double height;
+		    private double depth;
+		    
+		    public Box(double width, double height, double depth) {
+		        this.width = width;
+		        this.height = height;
+		        this.depth = depth;
+		    }
+		    
+		    public double getVolume() {
+		        return width * height * depth;
+		    }
+		}
+
+		class Calculator {
+		    public static int powerInt(int num1, int num2) {
+		        return (int) Math.pow(num1, num2);
+		    }
+		    
+		    public static double powerDouble(double num1, int num2) {
+		        return Math.pow(num1, num2);
+		    }
+		}
+
+

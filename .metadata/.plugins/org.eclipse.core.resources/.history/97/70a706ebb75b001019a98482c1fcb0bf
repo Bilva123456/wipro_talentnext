@@ -1,0 +1,42 @@
+package oops;
+
+class Animal {
+    public void eat() {
+        System.out.println("Animal is eating");
+    }
+    
+    public void sleep() {
+        System.out.println("Animal is sleeping");
+    }
+}
+
+class Bird extends Animal {
+    @Override
+    public void eat() {
+        System.out.println("Bird is eating seeds");
+    }
+    
+    @Override
+    public void sleep() {
+        System.out.println("Bird is sleeping in nest");
+    }
+    
+    public void fly() {
+        System.out.println("Bird is flying");
+    }
+}
+
+public class QuestionInheritance01 {
+    public static void main(String[] args) {
+        Animal animal = new Animal();
+        System.out.println("Animal object:");
+        animal.eat();
+        animal.sleep();
+        
+        System.out.println("\nBird object:");
+        Bird bird = new Bird();
+        bird.eat();
+        bird.sleep();
+        bird.fly();
+    }
+}

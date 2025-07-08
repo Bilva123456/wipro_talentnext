@@ -1,0 +1,24 @@
+package oops;
+
+import java.util.Scanner;
+
+public class QuestionString08 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter a string with *:");
+		String str = sc.nextLine();
+
+		int starIndex = str.indexOf('*');
+		if (starIndex == -1) {
+			System.out.println(str);
+		} else {
+			String left = str.substring(0, starIndex);
+			String right = str.substring(starIndex + 1);
+			System.out.println(right + left);
+		}
+
+		sc.close();
+	}
+}

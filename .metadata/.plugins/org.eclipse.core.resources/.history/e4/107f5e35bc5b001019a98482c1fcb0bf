@@ -1,0 +1,52 @@
+package oops;
+
+class Fruit {
+    protected String name;
+    protected String taste;
+    protected String size;
+    
+    public Fruit(String name, String taste, String size) {
+        this.name = name;
+        this.taste = taste;
+        this.size = size;
+    }
+    
+    public void eat() {
+        System.out.println("Eating " + name + " with " + taste + " taste");
+    }
+}
+
+class Apple extends Fruit {
+    public Apple(String name, String taste, String size) {
+        super(name, taste, size);
+    }
+    
+    @Override
+    public void eat() {
+        System.out.println("Apple is crunchy and " + taste);
+    }
+}
+
+class Orange extends Fruit {
+    public Orange(String name, String taste, String size) {
+        super(name, taste, size);
+    }
+    
+    @Override
+    public void eat() {
+        System.out.println("Orange is juicy and " + taste);
+    }
+}
+
+public class QuestionOverriding {
+    public static void main(String[] args) {
+        Apple apple = new Apple("Apple", "sweet", "medium");
+        Orange orange = new Orange("Orange", "tangy", "large");
+        
+        System.out.println("Apple eating:");
+        apple.eat();
+        
+        System.out.println("\nOrange eating:");
+        orange.eat();
+    }
+}

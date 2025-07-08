@@ -1,0 +1,35 @@
+package oops;
+
+import java.util.Scanner;
+
+public class QuestionStringConcatenation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+       
+        String str1 = scanner.nextLine();
+        System.out.print(",");
+      
+        String str2 = scanner.nextLine();
+        
+        String result = concatenateStrings(str1, str2);
+        System.out.println("Result: " + result);
+        
+        scanner.close();
+    }
+    
+    public static String concatenateStrings(String str1, String str2) {
+        String combined = str1 + str2;
+        String result = combined.toLowerCase();
+        
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < result.length(); i++) {
+            char ch = result.charAt(i);
+            if (sb.length() == 0 || sb.charAt(sb.length() - 1) != ch) {
+                sb.append(ch);
+            }
+        }
+        
+        return sb.toString();
+    }
+}
