@@ -1,8 +1,0 @@
-package java_fundamentals;
-import java.util.Scanner;
-public class Question4 {
-     Scanner sc = new Scanner(Strings[]args) {
-    	 int a = sc.nextInt();
-    	 int b = sc.nextInt();
-     }
-}
